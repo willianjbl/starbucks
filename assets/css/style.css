@@ -10,21 +10,20 @@ body {
     margin: 0;
 }
 
-.line-header {
-    background-color: #117050;
-    height: 10px;
-}
-
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 /***************************************************************
 *                           HEADER
 ****************************************************************/
-.header-area {
-    height: 100px;
+header {
+    border-top: 10px solid #117050;
+}
+
+.header-area {    
+    height: 112px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +33,7 @@ body {
     width: 64px;
     height: 64px;
 }
+
 .header-right {
     display: flex;
     align-items: center;
@@ -46,6 +46,31 @@ body {
     outline: none;
     border: 1px solid #b3b3b3;
     padding: 8.5px 10px;
-    width: 215px;
+    width: 100%;
+    max-width: 260px;
     font-size: 0.9em;
+}
+.header-right input::placeholder {
+    color: #b3b3b3;
+}
+.header-right form button {
+    background-color: transparent;
+    border: none;
+    margin-left: -39px;
+    cursor: pointer;
+    height: 36px;
+    width: 38px;
+}
+.header-right form button img {
+    width: 14px;
+}
+.header-right .menu-toggle {
+    display: flex;
+    align-items: center;
+    padding: 10 0px;
+    cursor: pointer;
+}
+.header-right .menu-toggle img {
+    width: 24px;
+    margin-left: 57px;
 }
