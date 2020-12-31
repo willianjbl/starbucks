@@ -151,6 +151,7 @@ header {
 }
 .content p {
     margin-top: 35px;
+    line-height: 1.6;
 }
 
 .content-left .content-text {
