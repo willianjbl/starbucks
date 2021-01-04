@@ -48,7 +48,7 @@ h2 {
 }
 
 .separator {
-    width: 106px;
+    width: 168px;
     height: 22px;
     background-color: #117050;
 }
@@ -175,4 +175,105 @@ header {
     background-image: url(../images/f1.jpg);
     background-position: center;
     background-size: cover;
+}
+
+/***************************************************************
+*                           CONTENT #2
+****************************************************************/
+.content-right .content-text {
+    padding: 40px 0;
+    padding-left: 50px;
+    grid-column: 2 / 3;
+    max-width:570px;
+    margin-right: auto;
+}
+.content-right .content-partial {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-image: url(../images/f4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+.content-right .content-image {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    background-image: url(../images/f3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/***************************************************************
+*                           CONTENT #3
+****************************************************************/
+.content-left#new-caramel .content-image {
+    background-image: url(../images/f5.jpg);
+}
+
+.content-left#new-caramel .text-bg {
+    background-image: url(../images/bg2.jpg);
+    background-position: left;
+}
+
+.content-left#new-caramel .content-text {
+    margin: 200px 0 200px auto;
+}
+
+/***************************************************************
+*                           CONTENT #4
+****************************************************************/
+.content-left#kindness {
+    grid-template-columns: repeat(3, 1fr);
+}
+.content-left#kindness .content-image {
+    background-image: url(../images/bg3.jpg);
+    background-position: unset;
+    grid-column: 2 / 4;
+    grid-row: 1 / span 2;
+}
+
+.content-left#kindness .text-bg {
+    background-color: #e8e9ee;
+}
+
+.content-left#kindness .content-text {
+    max-width: 330px;
+    margin: 150px 0 150px auto;
+}
+
+/***************************************************************
+*                           CONTENT #5
+****************************************************************/
+.content-full {
+    background-color: #e8e9ee;
+}
+
+.content-full .container {
+    grid-column: 1 / span 2;
+}
+
+.content-full .content-bg {
+    min-height: 500px;
+    width: 100%;
+    background-image: url(../images/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/***************************************************************
+*                           FOOTER
+****************************************************************/
+footer {
+    background-color: #333;
+    color: #FFF;
+    font-size: 0.9em;
+}
+
+footer .container {
+    padding: 45px 0;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
